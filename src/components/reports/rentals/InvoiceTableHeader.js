@@ -18,7 +18,6 @@ const styles = StyleSheet.create({
     borderRightColor: borderColor,
     borderRightWidth: 1,
     height: 24,
-    paddingLeft: 8,
     paddingTop: 4
   },
   withOutBorder: {

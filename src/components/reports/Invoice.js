@@ -1,5 +1,5 @@
 import React from "react";
-import { Page, Document, Image, Text, StyleSheet } from "@react-pdf/renderer";
+import { Font, Page, Document, Image, Text, StyleSheet } from "@react-pdf/renderer";
 import InvoiceTitle from "./InvoiceTitle";
 import InvoiceNo from "./InvoiceNo";
 import PageNumber from "./PageNumber";
@@ -12,6 +12,19 @@ import InvoiceTotal from "./InvoiceTotal";
 import InvoiceFor from "./InvoiceFor";
 import InvoiceFooter from "./InvoiceFooter";
 import SingPage from "./Sign";
+
+Font.register({
+  family: 'Roboto',
+  fonts: [
+    {
+      src: `/Roboto-Regular.ttf`
+    },
+    {
+      src: `/Roboto-Bold.ttf`,
+      fontWeight: 'bold'
+    }
+  ]
+});
 
 const styles = StyleSheet.create({
   page: {

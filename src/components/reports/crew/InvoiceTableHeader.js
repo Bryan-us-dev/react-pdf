@@ -19,7 +19,6 @@ const styles = StyleSheet.create({
     borderRightWidth: 1,
     fontWeight: 900,
     height: 24,
-    paddingLeft: 8,
     paddingTop: 4
   },
   name: {
@@ -27,7 +26,6 @@ const styles = StyleSheet.create({
     borderRightColor: borderColor,
     borderRightWidth: 1,
     height: 24,
-    paddingLeft: 8,
     paddingTop: 4
   },
   withOutBorder: {

@@ -25,7 +25,7 @@ const styles = StyleSheet.create({
     paddingTop: 4
   },
   col2: {
-    width: "40%",
+    width: "45%",
     borderRightColor: "black",
     borderRightWidth: 1,
     height: 24,
@@ -33,7 +33,7 @@ const styles = StyleSheet.create({
     paddingTop: 4
   },
   col3: {
-    width: "30%",
+    width: "25%",
     paddingLeft: 8
   }
 });

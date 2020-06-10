@@ -19,7 +19,6 @@ const styles = StyleSheet.create({
     borderRightWidth: 1,
     fontWeight: 800,
     height: 24,
-    paddingLeft: 8,
     paddingTop: 4
   },
   withOutBorder: {
