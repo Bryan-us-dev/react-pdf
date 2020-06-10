@@ -9,7 +9,7 @@ const invoice = {
   email: " go@gofor.productions",
   phone: "(917) 892-0273",
   address1: "41 Curry Rd",
-  address: "Hastings On Hudson, NY 10706",
+  address2: "Hastings On Hudson, NY 10706",
   site: "http://gofor.productions",
   trans_company: "Overland Entertainment",
   trans_address: "257 W 52nd St #5, New York, NY 10019",

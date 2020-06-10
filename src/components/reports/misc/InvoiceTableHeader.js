@@ -5,25 +5,24 @@ const borderColor = "black";
 const styles = StyleSheet.create({
   container: {
     flexDirection: "row",
-    alignItems: "center",
     height: 24,
-    textAlign: "center",
-    fontWeight: "bold",
     flexGrow: 1,
     borderBottomColor: "black",
     borderBottomWidth: 2
   },
   column: {
+    fontFamily: "Helvetica-Bold",
     width: "25%",
     borderRightColor: borderColor,
     borderRightWidth: 1,
-    fontWeight: 800,
     height: 24,
-    paddingTop: 4
+    paddingTop: 4,
+    paddingLeft: 8
   },
   withOutBorder: {
+    fontFamily: "Helvetica-Bold",
     width: "25%",
-    fontWeight: 800,
+    paddingTop: 4,
     paddingLeft: 8
   }
 });

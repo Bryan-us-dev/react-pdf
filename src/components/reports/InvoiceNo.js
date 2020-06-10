@@ -3,7 +3,8 @@ import { Text, View, StyleSheet } from "@react-pdf/renderer";
 
 const styles = StyleSheet.create({
   flexRow: {
-    flexDirection: "row"
+    flexDirection: "row",
+    fontSize: 10
   },
   flexRowTextBold: {
     flexDirection: "row",
@@ -15,7 +16,7 @@ const styles = StyleSheet.create({
   },
   subContainer2: {
     width: "70%",
-    top: -35
+    top: -40
   },
   label: {
     width: "50%",
@@ -25,6 +26,12 @@ const styles = StyleSheet.create({
     fontFamily: "Helvetica-Bold",
     width: "50%",
     textAlign: "right"
+  },
+  boldText: {
+    fontFamily: "Helvetica-Bold",
+    width: "50%",
+    textAlign: "left",
+    paddingLeft: 8
   },
   text: {
     width: "50%",
@@ -45,8 +52,8 @@ const InvoiceNo = ({ invoice }) => (
 
     <View style={styles.subContainer2}>
       <View style={styles.flexRowTextBold}>
-        <Text style={styles.label}>Project Number:</Text>
-        <Text style={styles.text}>{invoice.project_number}</Text>
+        <Text style={styles.boldLabel}>Project Number:</Text>
+        <Text style={styles.boldText}>{invoice.project_number}</Text>
       </View>
       <View style={styles.flexRow}>
         <Text style={styles.label}>Project Name:</Text>
