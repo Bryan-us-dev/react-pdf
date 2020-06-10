@@ -2,8 +2,9 @@ import React, { Fragment } from "react";
 import { Text, View, StyleSheet } from "@react-pdf/renderer";
 
 const styles = StyleSheet.create({
-  page:{
-    marginBottom: 16
+  firstLine:{
+    marginTop: 16,
+    marginBottom: 24
   },
   marginBottom: {
     marginBottom: 24
@@ -48,8 +49,8 @@ const styles = StyleSheet.create({
 });
 
 const SignPage = ({ invoice }) => (
-  <Fragment style={styles.page}>
-    <Text style={styles.marginBottom}>
+  <Fragment>
+    <Text style={styles.firstLine}>
       IN WITNESS WHEREOF, the parties have caused this Agreement to be executed by
       their duly authorized representatives as of the Effective Date.
     </Text>
