@@ -1,16 +1,7 @@
-import React from "react";
-import { Page, Text, View, StyleSheet } from "@react-pdf/renderer";
+import React, { Fragment } from "react";
+import { Text, View, StyleSheet } from "@react-pdf/renderer";
 
 const styles = StyleSheet.create({
-  page: {
-    fontFamily: "Helvetica",
-    fontSize: 11,
-    paddingTop: 30,
-    paddingLeft: 60,
-    paddingRight: 60,
-    lineHeight: 1.5,
-    flexDirection: "column"
-  },
   marginBottom: {
     marginBottom: 24
   },
@@ -54,7 +45,7 @@ const styles = StyleSheet.create({
 });
 
 const SignPage = ({ invoice }) => (
-  <Page size="A4" style={styles.page}>
+  <Fragment>
     <Text style={styles.marginBottom}>
       IN WITNESS WHEREOF, the parties have caused this Agreement to be executed by
       their duly authorized representatives as of the Effective Date.
@@ -100,7 +91,7 @@ const SignPage = ({ invoice }) => (
     <Text>Routing Number:</Text>
     <Text>{`${invoice.routing_number.paper} (paper & electronic)`}</Text>
     <Text>{`${invoice.routing_number.wires} (wires)`}</Text>
-  </Page>
+  </Fragment>
 );
 
 export default SignPage;

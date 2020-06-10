@@ -1,5 +1,5 @@
 import React from "react";
-import { Page, Document, Image, StyleSheet } from "@react-pdf/renderer";
+import { Page, Document, Image, Text, StyleSheet } from "@react-pdf/renderer";
 import InvoiceTitle from "./InvoiceTitle";
 import InvoiceNo from "./InvoiceNo";
 import PageNumber from "./PageNumber";
@@ -66,10 +66,15 @@ const Invoice = ({ invoice }) => (
       <Image style={styles.logo} src={"/black_logo.png"} />
       <TOSContainer beforeSign={beforeSign} afterSign={afterSign} />
     </Page>
-    <Page size="A4">
-    
+    <Page size="A4" style={styles.page}>
+      <Text>
+        [Remainder of page left intentionally blank. Signature page to follow.]
+      </Text>
     </Page>
-    <SingPage invoice={invoice.sign} />
+    <Page size="A4" style={styles.page}>
+      <Image style={styles.logo} src={"/black_logo.png"} />
+      <SingPage invoice={invoice.sign} />
+    </Page>
   </Document>
 );
 
